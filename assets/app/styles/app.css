@@ -1,0 +1,65 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: skyblue;
+}
+
+app-main {
+    background-color: antiquewhite;
+    height: 100%;
+}
+
+app-header {
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+}
+
+app-footer {
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+}
+
+nav {
+    display: flex;
+}
+
+.link {
+    padding: 10px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+}
+
+app-router {
+    flex: 1;
+    flex-direction: row !important;
+    margin: 10px;
+    gap: 10px;
+}
+
+.page {
+    flex: 1;
+    height: 100%;
+    border: 1px solid;
+    transition: background-color 300ms;
+}
+
+.page.active {
+    background-color: aqua;
+}
+
+.page.active-2 {
+    background-color: gold;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block importmap %}{{ importmap('app') }}{% endblock %}
+
+{% block body %}
+
+<app-main class="app"></app-main>
+
+<!--<script>
+
+
+
+function Navigate(pathname) {
+    window.history.pushState({}, '', pathname);
+    rootDiv.innerHTML = routes[window.location.pathname]
+}
+
+</script>-->
+
+{% endblock %}
+
+
