@@ -8,8 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class IndexController extends AbstractController
 {
-    #[Route('/{uri}', name: 'app_index', requirements: ['uri' => '((?!\.).)*'], utf8: true)]
-    //#[Route('/', name: 'app_index')]
+    //#[Route('/{uri}', name: 'app_index', requirements: ['uri' => '((?!\.).)*'], utf8: true)]
     public function index(): Response
     {
         return $this->render('index/index.html.twig', [
