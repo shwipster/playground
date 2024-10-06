@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block importmap %}{{ importmap('app') }}{% endblock %}
+
+{% block body %}
+HELLO
+{% for user in users %}
+        <li>{{ user.id|e }} | {{ user.name|e }} | {{ user.email|e }}</li>
+{% endfor %}
+
+<form action="{{ path('_logout_main') }}">
+<input type="submit" value="LOGOUT">
+</form>
+
+{% endblock %}
+
+
